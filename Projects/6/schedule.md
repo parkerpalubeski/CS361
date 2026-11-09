@@ -77,10 +77,9 @@ Assuming that the major development tasks run in parallel.
 ### Gantt Chart
 ```mermaid
 gantt
-    title Bike Shop Rental System – CPM Schedule (Person-Days)
-    dateFormat  X
-    axisFormat %s
-    tickInterval 5day
+    title Bike Shop Rental System – CPM Schedule
+    dateFormat  YYYY-MM-DD
+    axisFormat %b %d
 
     section Project Management
     Planning and Scheduling           :crit, pm1, 0, 4.333
