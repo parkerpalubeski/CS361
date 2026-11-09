@@ -82,48 +82,53 @@ gantt
     axisFormat %b %d
 
     section Project Management
-    Planning and Scheduling           :crit, pm1, 0, 4.333
-    Reporting                         :crit, pm2, 60.333, 3.167
+    Planning and Scheduling           :crit, pm1, 2026-01-01, 4d
+    Reporting                         :crit, pm2, 2026-03-03, 3d
 
     section Requirements & Design
-    Requirements gathering            :crit, rd1, 4.333, 6.500
-    Prototyping                       :crit, rd2, 10.833, 8.500
-    Architecture and database design  :crit, rd3, 19.333, 7.500
+    Requirements gathering            :crit, rd1, 2026-01-05, 6d
+    Prototyping                       :crit, rd2, 2026-01-13, 8d
+    Architecture and database design  :crit, rd3, 2026-01-21, 7d
 
     section Kiosk Interface
-    Greeting screen                   :ki1, 26.833, 2.167
-    Hardware Integration              :ki2, 29.000, 10.833
-    Web integration                   :ki3, 39.833, 6.500
+    Greeting screen                   :ki1, 2026-01-28, 2d
+    Hardware Integration              :ki2, 2026-01-30, 11d
+    Web integration                   :ki3, 2026-02-12, 6d
 
     section Web Interface
-    Bike catalog page                 :wi1, 26.833, 5.333
-    Individual bike Page              :wi2, 32.166, 4.333
-    Cart page                         :wi3, 36.499, 5.167
+    Bike catalog page                 :wi1, 2026-01-28, 5d
+    Individual bike Page              :wi2, 2026-02-04, 4d
+    Cart page                         :wi3, 2026-02-10, 5d
 
     section Rental Logic Unit
-    Date validation                   :rl1, 26.833, 3.167
-    Inventory state management        :rl2, 30.000, 8.667
-    Pricing Constraints               :rl3, 38.667, 5.333
+    Date validation                   :rl1, 2026-01-28, 3d
+    Inventory state management        :rl2, 2026-01-30, 9d
+    Pricing Constraints               :rl3, 2026-02-10, 5d
 
     section Late Fee Calculator
-    Automatic late calculation        :lf1, 26.833, 4.333
-    Manual staff adjustment           :lf2, 31.166, 3.167
+    Automatic late calculation        :lf1, 2026-01-28, 4d
+    Manual staff adjustment           :lf2, 2026-02-03, 3d
 
     section Payment Wrapper
-    Processor API Integration         :pw1, 26.833, 7.500
-    Card pre-authorization            :pw2, 34.333, 5.333
-    Execution of final charges        :pw3, 39.666, 5.333
-    Automated Data Deletion           :pw4, 44.999, 3.333
+    Processor API Integration         :pw1, 2026-01-28, 7d
+    Card pre-authorization            :pw2, 2026-02-04, 5d
+    Execution of final charges        :pw3, 2026-02-11, 5d
+    Automated Data Deletion           :pw4, 2026-02-18, 3d
+
+    section Infrastructure & Security
+    Infra & DB Setup                  :inf1, 2026-01-28, 4d
+    Authentication & RBAC             :sec1, 2026-02-03, 5d
+    Audit Logging & Error Handling    :log1, 2026-02-10, 5d
 
     section Employee / Management Dashboards
-    Rental Tracking                   :crit, ed1, 26.833, 6.500
-    Bike availability settings        :crit, ed2, 33.333, 4.333
-    Rate settings                     :crit, ed3, 37.666, 3.167
-    Refund Approval                   :crit, ed4, 40.833, 4.333
-    Summary Reports                   :crit, ed5, 45.166, 6.500
+    Rental Tracking                   :crit, ed1, 2026-01-28, 6d
+    Bike availability settings        :crit, ed2, 2026-02-05, 4d
+    Rate settings                     :crit, ed3, 2026-02-11, 3d
+    Refund Approval                   :crit, ed4, 2026-02-16, 4d
+    Summary Reports                   :crit, ed5, 2026-02-20, 6d
 
     section Testing
-    Automated Testing                 :crit, t1, 51.666, 8.667
-    Usability Testing                 :t2, 51.666, 5.333
-    Security Testing                  :t3, 51.666, 7.667
+    Automated Testing                 :crit, t1, 2026-02-26, 9d
+    Usability Testing                 :t2, 2026-02-26, 5d
+    Security Testing                  :t3, 2026-02-26, 8d
 ```
